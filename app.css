@@ -53,9 +53,7 @@ body {
     font-size: 18px;
 }
 
-.container input::placeholder {
-   color: var(--fontColor);
-}
+
 
 
 .container #addBtn {

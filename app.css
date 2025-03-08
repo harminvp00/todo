@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+:root{
+    --mainBg: #3674B5;
+    --fontColor: #000;
+    --taskColor: #fff;
+    --BtnFontColor: #000;
+    --addBtn: #d5dbe1;
+    --deleteBtn: #ff0000;
+}
+body {
+    background: var(--mainBg);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.container #title {
+    color: var(--taskColor);
+    margin: 15px 0;
+    text-align: center;
+}
+
+.inputContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+}
+
+.container input {
+    outline: 0;
+    border: 0;
+    color: var(--fontColor);
+    background: var(--taskColor);
+    margin: 2px 0;
+    border-radius: 30px;
+    padding: 15px;
+    flex-grow: 1;
+    font-size: 18px;
+}
+
+.container input::placeholder {
+   color: var(--fontColor);
+}
+
+
+.container #addBtn {
+    cursor: pointer;
+    position: absolute;
+    color: var(--BtnFontColor);
+    background: var(--addBtn);
+    right: 0;
+    border: 0;
+    margin: 2px 0;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    color: var(--fontColor);
+    background-color: var(--taskColor);
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.task-img{
+    width: 30px;
+    height: 30px;
+}
+
+li span{
+    flex-grow: 1;
+    padding: 0 7px;
+}
+
+li button{
+    border: 0;
+    outline: 0;
+    padding: 10px 15px;
+    border-radius: 22px;
+    color: var(--taskColor);
+    background: var(--deleteBtn);
+}
